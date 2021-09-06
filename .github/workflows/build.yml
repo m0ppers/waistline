@@ -30,3 +30,6 @@ jobs:
           npm install --frozen-lockfile
           npm run build:android
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - uses: actions/upload-artifact@v2
+        with:
+          path: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
