@@ -17,5 +17,5 @@ jobs:
       - name: build the apk
         run: |
           npm install --frozen-lockfile
-          npm run build
+          npm run build:android
       - run: echo "🍏 This job's status is ${{ job.status }}."
